@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\projetos\calculadora4bits\mux4_in4bits\simulation\qsim
+vmux4_in4bits
+Z1 !s100 H;GnVP?m`Ag2cU;`bC;=f1
+Z2 I7^[ZcN9JhNO8Rz8gZ^zg12
+Z3 VobYVL6cR[DnbX9:G;DRF]1
+Z4 dC:\altera\13.0sp1\projetos\calculadora4bits\mux4_in4bits\simulation\qsim
+Z5 w1554757917
+Z6 8mux4_in4bits.vo
+Z7 Fmux4_in4bits.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|mux4_in4bits.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1554757918.719000
+Z12 !s107 mux4_in4bits.vo|
+!s101 -O0
+vmux4_in4bits_vlg_check_tst
+!i10b 1
+Z13 !s100 ZD>9MHfg^2>H<n9P<L^>Q3
+Z14 I>=[6Zk7n^J5;ER^j23Jeo1
+Z15 V]nQZ?eg;7HOfZWHdB7mEU3
+R4
+Z16 w1554757916
+Z17 8mux4_in4bits.vt
+Z18 Fmux4_in4bits.vt
+L0 67
+R8
+r1
+!s85 0
+31
+Z19 !s108 1554757918.985000
+Z20 !s107 mux4_in4bits.vt|
+Z21 !s90 -work|work|mux4_in4bits.vt|
+!s101 -O0
+R10
+vmux4_in4bits_vlg_sample_tst
+!i10b 1
+Z22 !s100 iUHbVZ`dOjI6Ez[I_kC[h2
+Z23 I_S@gIOz8mFH[;mH_4Mkk@2
+Z24 V;R^5^3OOkg7V8:i@kRGcd3
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vmux4_in4bits_vlg_vec_tst
+!i10b 1
+!s100 aQ?KlUKOi6=U]g7gDb]K?3
+IdN?A7UWi_C6D4l^nW_ceh1
+Z25 VWMMXgO7`fC1b=knDXXhZB0
+R4
+R16
+R17
+R18
+Z26 L0 215
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

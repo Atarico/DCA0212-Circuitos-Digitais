@@ -1,0 +1,46 @@
+entity calculadora is 
+port(
+	x1: in bit_VECTOR (3 downto 0);
+	x2: in bit_VECTOR (3 downto 0);
+	saidaf: out bit_VECTOR (4 downto 0);
+	chave: in bit_VECTOR (2 downto 0));
+end calculadora;
+
+architecture ckt of calculadora is
+
+component mux4_in4bits is
+port ( 
+		am : in bit_VECTOR (4 downto 0); 
+		bm : in bit_VECTOR (4 downto 0);
+		cm : in bit_VECTOR (4 downto 0);
+		dm : in bit_VECTOR (4 downto 0);
+		em : in bit_VECTOR (4 downto 0);
+		ch : in bit_VECTOR  (2 downto 0);
+		saidam : out bit_VECTOR (4 downto 0)); 
+end component;
+
+component somador4bits is 
+port ( 
+		asum : in bit_VECTOR (3 downto 0); 
+		bsum : in bit_VECTOR (3 downto 0); 
+		cinsum : in bit; 
+		ssum : out bit_VECTOR (3 downto 0); 
+		coutsum : out bit); 
+end component; 
+
+component subtrator4bits IS
+port(
+	cinsb : in BIT;
+	asb: in BIT_VECTOR (3 downto 0);
+	bsb: in BIT_VECTOR (3 downto 0);
+	coutsb: out BIT;
+	ssb: out BIT_VECTOR (3 downto 0));
+end component;
+
+component inversor4bits is
+port(
+		ano: in bit_VECTOR(3 downto 0);
+		anegado: out bit_VECTOR(3 downto 0));
+end component;
+begin
+end ckt;

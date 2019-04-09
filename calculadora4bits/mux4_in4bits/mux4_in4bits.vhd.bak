@@ -1,0 +1,25 @@
+entity mux4_in4bits is 
+port ( a : in bit_VECTOR (3 downto 0); 
+b : in bit_VECTOR (3 downto 0);
+c : in bit_VECTOR (3 downto 0);
+d : in bit_VECTOR (3 downto 0);
+s0, s1 : in bit;
+saida : out bit_VECTOR (3 downto 0)); 
+end mux4_in4bits;
+
+architecture cktmux4_in4bits of mux4_in4bits is
+
+component mux4_in is 
+port( a, b, ,c, d, s0, s1: in bit;
+saida : out bit); 
+end component;
+begin
+u0: mux4_in port map (a => a(0), b => b(0),c => c(0), d => d(0), s0 => s0, s1=> s1, saída => saída(0));
+
+u1: mux4_in port map (a => a(1), b => b(1),c => c(1), d => d(1), s0 => s0, s1=> s1, saída => saída(1));
+
+u2: mux4_in port map (a => a(2), b => b(2),c => c(2), d => d(2), s0 => s0, s1=> s1, saída => saída(2));
+
+u3: mux4_in port map (a => a(3), b => b(3),c => c(3), d => d(3), s0 => s0, s1=> s1, saída => saída(3));
+
+end cktmux4_in4bits;

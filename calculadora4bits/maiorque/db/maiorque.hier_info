@@ -1,0 +1,16 @@
+|maiorque
+amore[0] => y~9.IN1
+amore[1] => y~6.IN1
+amore[2] => y~2.IN1
+amore[2] => y~5.IN0
+amore[3] => y~0.IN0
+amore[3] => y~1.IN0
+bmore[0] => y~10.IN1
+bmore[1] => y~7.IN1
+bmore[2] => y~3.IN1
+bmore[2] => y~5.IN1
+bmore[3] => y~0.IN1
+bmore[3] => y~1.IN1
+y <= y~11.DB_MAX_OUTPUT_PORT_TYPE
+
+

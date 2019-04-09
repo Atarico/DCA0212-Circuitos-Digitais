@@ -1,0 +1,15 @@
+entity inversor4bits is
+port(ano: in bit_VECTOR(3 downto 0);
+		anegado: out bit_VECTOR(3 downto 0));
+		
+architecture comportamento of inversor4bits is
+component inversor is 
+port (ain: in bit;
+		ina: out bit);
+end component;
+begin
+	gen: for i in 0 to 3 generate 
+		uut: inversor port map (ain => ano(i), ina => anegado(i));
+end generate;
+
+end comportamento;

@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Casa/Documents/DCA CircuitoDigi/subtrator/subtrator.vhd
+source_file = 1, C:/Users/Casa/Documents/DCA CircuitoDigi/subtrator/db/subtrator.cbx.xml
+source_file = 1, c:/users/casa/documents/quartuss/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/users/casa/documents/quartuss/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/users/casa/documents/quartuss/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/users/casa/documents/quartuss/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = subtrator
+instance = comp, \c_in~I\, c_in, subtrator, 1
+instance = comp, \B~I\, B, subtrator, 1
+instance = comp, \A~I\, A, subtrator, 1
+instance = comp, \S~0\, S~0, subtrator, 1
+instance = comp, \c_out~0\, c_out~0, subtrator, 1
+instance = comp, \S~I\, S, subtrator, 1
+instance = comp, \c_out~I\, c_out, subtrator, 1

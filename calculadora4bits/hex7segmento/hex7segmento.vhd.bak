@@ -1,0 +1,19 @@
+entity hex7segmento is
+port (X_: inn bit_VECTOR (3 downto 0);
+		segs: out bit_VECTOR (3 downto 0));
+end hex7segmento;
+
+architecture ckt of hex7segmento is
+begin
+process(x)
+begin 
+	case x is
+		when X_"0" => segs <= "0000001"; -- 0
+		when X_"1" => segs <= "1001111"; -- 1
+		when X_"2" => segs <= "0010010"; -- 2
+		when X_"3" => segs <= "0000110"; -- 3
+		when X_"0" => segs <= "0000000"; -- 4
+
+		
+		
+	

@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Casa\Documents\DCA CircuitoDigi\7segdecode\simulation\qsim
+vhex7segdecode
+Z1 I0MoInBikC[lg7[H23eHo[1
+Z2 V1mOB@hE85gkgbYP_JiMcG0
+Z3 dC:\Users\Casa\Documents\DCA CircuitoDigi\7segdecode\simulation\qsim
+Z4 w1554661239
+Z5 87segdecode.vo
+Z6 F7segdecode.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 ff=Eo=51<?8<VKVE0In?[3
+!s85 0
+Z10 !s108 1554661249.996000
+Z11 !s107 7segdecode.vo|
+Z12 !s90 -work|work|7segdecode.vo|
+!s101 -O0
+vhex7segdecode_vlg_check_tst
+!i10b 1
+!s100 P`i10e[:;U4id??3jED:40
+Ibb2@o4lkV:?VBBhAeD`9l0
+VoXTPPCd_7H_mIm=U=zYo`1
+R3
+Z13 w1554661235
+Z14 87segdecode.vt
+Z15 F7segdecode.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z16 !s108 1554661250.434000
+Z17 !s107 7segdecode.vt|
+Z18 !s90 -work|work|7segdecode.vt|
+!s101 -O0
+R8
+vhex7segdecode_vlg_sample_tst
+!i10b 1
+!s100 c^blCNZo4hA<IzmHkO;E40
+I]7zBBZRKMW8BUHS3Kb]Nf0
+V@TCG7d8kPc4LNTHjJI^N73
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vhex7segdecode_vlg_vec_tst
+!i10b 1
+!s100 dOJl6SlbHdhDLVBTVH`0H3
+IL@BMnS5f41W:QDh;Pj=4F2
+VNMdi@[72J_e>1k>3=mIQe1
+R3
+R13
+R14
+R15
+L0 314
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

@@ -1,0 +1,24 @@
+|mux4_in
+a => saida~0.IN0
+b => saida~3.IN0
+c => saida~7.IN0
+d => saida~11.IN0
+e => saida~15.IN0
+s[0] => saida~4.IN1
+s[0] => saida~12.IN1
+s[0] => saida~0.IN1
+s[0] => saida~8.IN1
+s[0] => saida~16.IN1
+s[1] => saida~7.IN1
+s[1] => saida~11.IN1
+s[1] => saida~1.IN1
+s[1] => saida~3.IN1
+s[1] => saida~15.IN1
+s[2] => saida~17.IN1
+s[2] => saida~2.IN1
+s[2] => saida~5.IN1
+s[2] => saida~9.IN1
+s[2] => saida~13.IN1
+saida <= saida~18.DB_MAX_OUTPUT_PORT_TYPE
+
+

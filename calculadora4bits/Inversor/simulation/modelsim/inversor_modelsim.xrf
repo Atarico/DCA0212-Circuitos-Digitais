@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, ../subtrator/inversor.vhd
+source_file = 1, C:/Users/Casa/Documents/DCA CircuitoDigi/Inversor/db/inversor.vhd
+source_file = 1, C:/Users/Casa/Documents/DCA CircuitoDigi/Inversor/db/inversor.cbx.xml
+source_file = 1, c:/users/casa/documents/quartuss/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/users/casa/documents/quartuss/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/users/casa/documents/quartuss/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/users/casa/documents/quartuss/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = inversor
+instance = comp, \ain~I\, ain, inversor, 1
+instance = comp, \ina~I\, ina, inversor, 1

@@ -1,0 +1,31 @@
+|inversor4bits
+ano[0] => inversor:gen:0:uut.ain
+ano[1] => inversor:gen:1:uut.ain
+ano[2] => inversor:gen:2:uut.ain
+ano[3] => inversor:gen:3:uut.ain
+anegado[0] <= inversor:gen:0:uut.ina
+anegado[1] <= inversor:gen:1:uut.ina
+anegado[2] <= inversor:gen:2:uut.ina
+anegado[3] <= inversor:gen:3:uut.ina
+
+
+|inversor4bits|inversor:\gen:0:uut
+ain => ina.DATAIN
+ina <= ain.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|inversor4bits|inversor:\gen:1:uut
+ain => ina.DATAIN
+ina <= ain.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|inversor4bits|inversor:\gen:2:uut
+ain => ina.DATAIN
+ina <= ain.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|inversor4bits|inversor:\gen:3:uut
+ain => ina.DATAIN
+ina <= ain.DB_MAX_OUTPUT_PORT_TYPE
+
+

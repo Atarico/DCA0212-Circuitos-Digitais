@@ -1,0 +1,61 @@
+|somador4bits
+asum[0] => somador:gen:0:uut.a
+asum[1] => somador:gen:1:uut.a
+asum[2] => somador:gen:2:uut.a
+asum[3] => somador:gen:3:uut.a
+bsum[0] => somador:gen:0:uut.b
+bsum[1] => somador:gen:1:uut.b
+bsum[2] => somador:gen:2:uut.b
+bsum[3] => somador:gen:3:uut.b
+cinsum => somador:gen:0:uut.cin
+ssum[0] <= somador:gen:0:uut.s
+ssum[1] <= somador:gen:1:uut.s
+ssum[2] <= somador:gen:2:uut.s
+ssum[3] <= somador:gen:3:uut.s
+coutsum <= somador:gen:3:uut.cout
+
+
+|somador4bits|somador:\gen:0:uut
+a => s~0.IN0
+a => cout~1.IN0
+b => s~0.IN1
+b => cout~1.IN1
+cin => s~1.IN1
+cin => cout~0.IN1
+s <= s~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador4bits|somador:\gen:1:uut
+a => s~0.IN0
+a => cout~1.IN0
+b => s~0.IN1
+b => cout~1.IN1
+cin => s~1.IN1
+cin => cout~0.IN1
+s <= s~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador4bits|somador:\gen:2:uut
+a => s~0.IN0
+a => cout~1.IN0
+b => s~0.IN1
+b => cout~1.IN1
+cin => s~1.IN1
+cin => cout~0.IN1
+s <= s~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador4bits|somador:\gen:3:uut
+a => s~0.IN0
+a => cout~1.IN0
+b => s~0.IN1
+b => cout~1.IN1
+cin => s~1.IN1
+cin => cout~0.IN1
+s <= s~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+

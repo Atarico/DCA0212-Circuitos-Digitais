@@ -1,0 +1,73 @@
+|subtrator4bits
+cinsb => subtrator:gen:0:uut.c_in
+asb[0] => subtrator:gen:0:uut.a
+asb[1] => subtrator:gen:1:uut.a
+asb[2] => subtrator:gen:2:uut.a
+asb[3] => subtrator:gen:3:uut.a
+bsb[0] => subtrator:gen:0:uut.b
+bsb[1] => subtrator:gen:1:uut.b
+bsb[2] => subtrator:gen:2:uut.b
+bsb[3] => subtrator:gen:3:uut.b
+coutsb <= subtrator:gen:3:uut.c_out
+ssb[0] <= subtrator:gen:0:uut.s
+ssb[1] <= subtrator:gen:1:uut.s
+ssb[2] <= subtrator:gen:2:uut.s
+ssb[3] <= subtrator:gen:3:uut.s
+
+
+|subtrator4bits|subtrator:\gen:0:uut
+c_in => comb.IN0
+c_in => comb.IN0
+c_in => S.IN1
+A => comb.IN0
+A => comb.IN0
+A => comb.IN1
+B => comb.IN1
+B => comb.IN1
+B => comb.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtrator4bits|subtrator:\gen:1:uut
+c_in => comb.IN0
+c_in => comb.IN0
+c_in => S.IN1
+A => comb.IN0
+A => comb.IN0
+A => comb.IN1
+B => comb.IN1
+B => comb.IN1
+B => comb.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtrator4bits|subtrator:\gen:2:uut
+c_in => comb.IN0
+c_in => comb.IN0
+c_in => S.IN1
+A => comb.IN0
+A => comb.IN0
+A => comb.IN1
+B => comb.IN1
+B => comb.IN1
+B => comb.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtrator4bits|subtrator:\gen:3:uut
+c_in => comb.IN0
+c_in => comb.IN0
+c_in => S.IN1
+A => comb.IN0
+A => comb.IN0
+A => comb.IN1
+B => comb.IN1
+B => comb.IN1
+B => comb.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

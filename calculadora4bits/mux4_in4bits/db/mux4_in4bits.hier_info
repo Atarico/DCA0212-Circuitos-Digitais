@@ -1,0 +1,135 @@
+|mux4_in4bits
+am[0] => mux4_in:gen:0:uut.a
+am[1] => mux4_in:gen:1:uut.a
+am[2] => mux4_in:gen:2:uut.a
+am[3] => mux4_in:gen:3:uut.a
+bm[0] => mux4_in:gen:0:uut.b
+bm[1] => mux4_in:gen:1:uut.b
+bm[2] => mux4_in:gen:2:uut.b
+bm[3] => mux4_in:gen:3:uut.b
+cm[0] => mux4_in:gen:0:uut.c
+cm[1] => mux4_in:gen:1:uut.c
+cm[2] => mux4_in:gen:2:uut.c
+cm[3] => mux4_in:gen:3:uut.c
+dm[0] => mux4_in:gen:0:uut.d
+dm[1] => mux4_in:gen:1:uut.d
+dm[2] => mux4_in:gen:2:uut.d
+dm[3] => mux4_in:gen:3:uut.d
+em[0] => mux4_in:gen:0:uut.e
+em[1] => mux4_in:gen:1:uut.e
+em[2] => mux4_in:gen:2:uut.e
+em[3] => mux4_in:gen:3:uut.e
+ch[0] => mux4_in:gen:0:uut.s[0]
+ch[0] => mux4_in:gen:1:uut.s[0]
+ch[0] => mux4_in:gen:2:uut.s[0]
+ch[0] => mux4_in:gen:3:uut.s[0]
+ch[1] => mux4_in:gen:0:uut.s[1]
+ch[1] => mux4_in:gen:1:uut.s[1]
+ch[1] => mux4_in:gen:2:uut.s[1]
+ch[1] => mux4_in:gen:3:uut.s[1]
+ch[2] => mux4_in:gen:0:uut.s[2]
+ch[2] => mux4_in:gen:1:uut.s[2]
+ch[2] => mux4_in:gen:2:uut.s[2]
+ch[2] => mux4_in:gen:3:uut.s[2]
+saidam[0] <= mux4_in:gen:0:uut.saida
+saidam[1] <= mux4_in:gen:1:uut.saida
+saidam[2] <= mux4_in:gen:2:uut.saida
+saidam[3] <= mux4_in:gen:3:uut.saida
+
+
+|mux4_in4bits|mux4_in:\gen:0:uut
+a => saida.IN0
+b => saida.IN0
+c => saida.IN0
+d => saida.IN0
+e => saida.IN0
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux4_in4bits|mux4_in:\gen:1:uut
+a => saida.IN0
+b => saida.IN0
+c => saida.IN0
+d => saida.IN0
+e => saida.IN0
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux4_in4bits|mux4_in:\gen:2:uut
+a => saida.IN0
+b => saida.IN0
+c => saida.IN0
+d => saida.IN0
+e => saida.IN0
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux4_in4bits|mux4_in:\gen:3:uut
+a => saida.IN0
+b => saida.IN0
+c => saida.IN0
+d => saida.IN0
+e => saida.IN0
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+

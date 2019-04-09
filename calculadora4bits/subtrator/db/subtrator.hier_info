@@ -1,0 +1,14 @@
+|subtrator
+c_in => comb~2.IN0
+c_in => comb~3.IN0
+c_in => S~0.IN1
+A => comb~0.IN0
+A => comb~1.IN0
+A => comb~2.IN1
+B => comb~0.IN1
+B => comb~1.IN1
+B => comb~3.IN1
+S <= S~0.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out~1.DB_MAX_OUTPUT_PORT_TYPE
+
+

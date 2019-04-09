@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Casa/Documents/DCA CircuitoDigi/Inversor/db/inversor.vhd
+source_file = 1, C:/Users/Casa/Documents/DCA CircuitoDigi/inversor4bits/inversor4bits.vhd
+source_file = 1, C:/Users/Casa/Documents/DCA CircuitoDigi/inversor4bits/db/inversor4bits.cbx.xml
+source_file = 1, c:/users/casa/documents/quartuss/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/users/casa/documents/quartuss/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/users/casa/documents/quartuss/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/users/casa/documents/quartuss/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = inversor4bits
+instance = comp, \ano[0]~I\, ano[0], inversor4bits, 1
+instance = comp, \ano[1]~I\, ano[1], inversor4bits, 1
+instance = comp, \ano[2]~I\, ano[2], inversor4bits, 1
+instance = comp, \ano[3]~I\, ano[3], inversor4bits, 1
+instance = comp, \anegado[0]~I\, anegado[0], inversor4bits, 1
+instance = comp, \anegado[1]~I\, anegado[1], inversor4bits, 1
+instance = comp, \anegado[2]~I\, anegado[2], inversor4bits, 1
+instance = comp, \anegado[3]~I\, anegado[3], inversor4bits, 1

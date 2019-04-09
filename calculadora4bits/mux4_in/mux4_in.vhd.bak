@@ -1,0 +1,9 @@
+entity mux4_in is
+port(a,b,c,d,s0,s1: in bit;
+saida : out bit);
+end mux4_in;
+
+architecture cktmux4_in of mux4_in is
+begin
+saida <= ( a and (not s0) and (not s1) ) or ( b and (not s1) and s0) or ( c and s1 and (not s0)) or ( d and s1 and s0);
+end cktmux4_in;

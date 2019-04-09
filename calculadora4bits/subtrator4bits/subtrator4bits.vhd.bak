@@ -1,0 +1,23 @@
+ENTITY subtrator4bits IS
+	PORT(cin : IN BIT;
+	a: in BIT_VECTOR (3 downto 0);
+	b: in BIT_VECTOR (3 downto 0);
+	cout: OUT BIT;
+	s: out BIT_VECTOR (3 downto 0));
+END subtrator4bits;
+
+--arquitetura
+ARCHITECTURE circuito OF subtrator4bits IS
+component subtrator is 
+	port(a, b, c_in : in bit; 
+	s, c_out : out bit); 
+end component;
+signal c: bit_vector(4 downto 0);
+BEGIN
+	u1: subtrator port map (a => a(0), b => b(0), c_in => c(0), s => s(0), c_out => c(1));
+	u2: subtrator port map (a => a(1), b => b(1), c_in => c(1), s => s(1), c_out => c(2));
+	u3: subtrator port map (a => a(2), b => b(2), c_in => c(2), s => s(2), c_out => c(3));
+	u4: subtrator port map (a => a(3), b => b(3), c_in => c(3), s => s(3), c_out => c(4));
+	c(0) <= cin;
+	cout <= c(4);
+END circuito;

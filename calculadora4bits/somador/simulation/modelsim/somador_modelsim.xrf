@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Casa/Documents/DCA CircuitoDigi/somador/somador.vhd
+source_file = 1, C:/Users/Casa/Documents/DCA CircuitoDigi/somador/db/somador.cbx.xml
+source_file = 1, c:/users/casa/documents/quartuss/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/users/casa/documents/quartuss/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/users/casa/documents/quartuss/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/users/casa/documents/quartuss/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = somador
+instance = comp, \a~I\, a, somador, 1
+instance = comp, \cin~I\, cin, somador, 1
+instance = comp, \b~I\, b, somador, 1
+instance = comp, \s~0\, s~0, somador, 1
+instance = comp, \cout~0\, cout~0, somador, 1
+instance = comp, \s~I\, s, somador, 1
+instance = comp, \cout~I\, cout, somador, 1
