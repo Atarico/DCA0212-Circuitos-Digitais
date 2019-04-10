@@ -5,7 +5,7 @@ port(
 	chave: in bit_VECTOR (2 downto 0);
 	btnLigar: in BIT;
 	
-	saidaf: out bit_VECTOR (4 downto 0);
+	saidaDisplay: out bit_VECTOR (6 downto 0);
 	ctrl: out bit_VECTOR(1 downto 0);
 	c0: out bit);
 
@@ -153,15 +153,13 @@ begin
 														saidam(0) => Yseg(0), saidam(1) => Yseg(1), saidam(2) => Yseg(2), saidam(3) => Yseg(3));
 	
 	--atribuindo a saida por questoes de debugging
-	saidaf(0) <= Yseg(0);
-	saidaf(1) <= Yseg(1);
-	saidaf(2) <= Yseg(2);
-	saidaf(3) <= Yseg(3);
 	
-	
-	display7segmento: display7seg port map( xseg(0) => Yseg(0), xseg(1) => Yseg(1),xseg(2) => Yseg(2),xseg(3) => Yseg(3));	
 	ctrl(0) <= NOT(btnLigar) OR (NOT(chave(2)) and chave(1) and NOT(chave(0))) OR (NOT(chave(2)) and chave(1) and chave(0));
 	ctrl(1) <= '0';
+	
+	display7segmento: display7seg port map( xseg(0) => Yseg(0), xseg(1) => Yseg(1),xseg(2) => Yseg(2),xseg(3) => Yseg(3),
+														aseg => saidaDisplay(0), bseg => saidaDisplay(1), cseg => saidaDisplay(2), dseg => saidaDisplay(3), eseg => saidaDisplay(4), fseg => saidaDisplay(5), gseg => saidaDisplay(6));
+	
 
 --         						 COMBINACAO LOGICA DO SUBTRATOR PARA ACENDER O LED			   ||			COMBINACAO LOGICA DO SOMADOR PARA ACENDER O LED		  || 			COMBINACAO LOGICA DO MAIOR QUE PARA ACENDER O LED		   ||				COMBINACAO LOGICA DO MENOR QUE PARA ACENDER O LED
 	c0 <= btnLigar AND(( NOT(chave(2)) and NOT(chave(1)) and NOT(chave(0))  and Ysb(4)) OR (NOT(chave(2)) and NOT(chave(1)) and chave(0) and Ysum(4)) OR (NOT(chave(2)) and chave(1) and NOT(chave(0)) and coutMaiorQue) OR (NOT(chave(2)) and chave(1) and chave(0) and coutMenorQue));

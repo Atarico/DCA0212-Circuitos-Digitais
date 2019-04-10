@@ -1,51 +1,480 @@
-|display7seg
-xseg[0] => aseg~2.IN1
-xseg[0] => aseg~9.IN1
-xseg[0] => aseg~13.IN1
-xseg[0] => bseg~3.IN1
-xseg[0] => bseg~5.IN1
-xseg[0] => dseg~2.IN1
-xseg[0] => eseg~0.IN0
-xseg[0] => eseg~3.IN1
-xseg[0] => fseg~0.IN1
-xseg[0] => fseg~3.IN1
-xseg[0] => gseg~2.IN1
-xseg[0] => aseg~5.IN1
-xseg[0] => bseg~1.IN1
-xseg[0] => bseg~7.IN1
-xseg[0] => cseg~1.IN1
-xseg[0] => cseg~4.IN1
-xseg[0] => dseg~0.IN1
-xseg[1] => aseg~12.IN1
-xseg[1] => bseg~0.IN0
-xseg[1] => bseg~2.IN0
-xseg[1] => cseg~0.IN1
-xseg[1] => cseg~2.IN1
-xseg[1] => fseg~2.IN0
-xseg[1] => gseg~1.IN1
-xseg[1] => aseg~1.IN1
-xseg[1] => aseg~4.IN1
-xseg[1] => aseg~8.IN1
-xseg[1] => eseg~2.IN0
-xseg[2] => aseg~3.IN0
-xseg[2] => aseg~7.IN0
-xseg[2] => bseg~0.IN1
-xseg[2] => aseg~0.IN0
-xseg[2] => aseg~11.IN0
-xseg[2] => eseg~2.IN1
-xseg[3] => aseg~7.IN1
-xseg[3] => aseg~11.IN1
-xseg[3] => bseg~2.IN1
-xseg[3] => aseg~0.IN1
-xseg[3] => aseg~3.IN1
-xseg[3] => eseg~0.IN1
-xseg[3] => fseg~2.IN1
-aseg <= aseg~14.DB_MAX_OUTPUT_PORT_TYPE
-bseg <= bseg~8.DB_MAX_OUTPUT_PORT_TYPE
-cseg <= cseg~5.DB_MAX_OUTPUT_PORT_TYPE
-dseg <= dseg~3.DB_MAX_OUTPUT_PORT_TYPE
-eseg <= eseg~4.DB_MAX_OUTPUT_PORT_TYPE
-fseg <= fseg~5.DB_MAX_OUTPUT_PORT_TYPE
-gseg <= gseg~3.DB_MAX_OUTPUT_PORT_TYPE
+|calculadora
+x1[0] => somador4bits:instanciaSomador.asum[0]
+x1[0] => subtrator4bits:instanciaSubtrator.asb[0]
+x1[0] => inversor4bits:instanciaInversor.ano[0]
+x1[0] => maiorque:instanciaMaiorQue.amore[0]
+x1[0] => menorque:instanciaMenorQue.amiss[0]
+x1[1] => somador4bits:instanciaSomador.asum[1]
+x1[1] => subtrator4bits:instanciaSubtrator.asb[1]
+x1[1] => inversor4bits:instanciaInversor.ano[1]
+x1[1] => maiorque:instanciaMaiorQue.amore[1]
+x1[1] => menorque:instanciaMenorQue.amiss[1]
+x1[2] => somador4bits:instanciaSomador.asum[2]
+x1[2] => subtrator4bits:instanciaSubtrator.asb[2]
+x1[2] => inversor4bits:instanciaInversor.ano[2]
+x1[2] => maiorque:instanciaMaiorQue.amore[2]
+x1[2] => menorque:instanciaMenorQue.amiss[2]
+x1[3] => somador4bits:instanciaSomador.asum[3]
+x1[3] => subtrator4bits:instanciaSubtrator.asb[3]
+x1[3] => inversor4bits:instanciaInversor.ano[3]
+x1[3] => maiorque:instanciaMaiorQue.amore[3]
+x1[3] => menorque:instanciaMenorQue.amiss[3]
+x2[0] => somador4bits:instanciaSomador.bsum[0]
+x2[0] => subtrator4bits:instanciaSubtrator.bsb[0]
+x2[0] => maiorque:instanciaMaiorQue.bmore[0]
+x2[0] => menorque:instanciaMenorQue.bmiss[0]
+x2[1] => somador4bits:instanciaSomador.bsum[1]
+x2[1] => subtrator4bits:instanciaSubtrator.bsb[1]
+x2[1] => maiorque:instanciaMaiorQue.bmore[1]
+x2[1] => menorque:instanciaMenorQue.bmiss[1]
+x2[2] => somador4bits:instanciaSomador.bsum[2]
+x2[2] => subtrator4bits:instanciaSubtrator.bsb[2]
+x2[2] => maiorque:instanciaMaiorQue.bmore[2]
+x2[2] => menorque:instanciaMenorQue.bmiss[2]
+x2[3] => somador4bits:instanciaSomador.bsum[3]
+x2[3] => subtrator4bits:instanciaSubtrator.bsb[3]
+x2[3] => maiorque:instanciaMaiorQue.bmore[3]
+x2[3] => menorque:instanciaMenorQue.bmiss[3]
+chave[0] => ctrl.IN1
+chave[0] => c0.IN1
+chave[0] => mux4_in4bits:multiplexador.ch[0]
+chave[0] => ctrl.IN1
+chave[0] => c0.IN1
+chave[1] => ctrl.IN0
+chave[1] => mux4_in4bits:multiplexador.ch[1]
+chave[1] => c0.IN0
+chave[2] => mux4_in4bits:multiplexador.ch[2]
+chave[2] => ctrl.IN1
+chave[2] => c0.IN1
+btnLigar => c0.IN1
+btnLigar => ctrl.IN1
+saidaDisplay[0] <= display7seg:display7segmento.aseg
+saidaDisplay[1] <= display7seg:display7segmento.bseg
+saidaDisplay[2] <= display7seg:display7segmento.cseg
+saidaDisplay[3] <= display7seg:display7segmento.dseg
+saidaDisplay[4] <= display7seg:display7segmento.eseg
+saidaDisplay[5] <= display7seg:display7segmento.fseg
+saidaDisplay[6] <= display7seg:display7segmento.gseg
+ctrl[0] <= ctrl.DB_MAX_OUTPUT_PORT_TYPE
+ctrl[1] <= <GND>
+c0 <= c0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|somador4bits:instanciaSomador
+asum[0] => somador:gen:0:uut.a
+asum[1] => somador:gen:1:uut.a
+asum[2] => somador:gen:2:uut.a
+asum[3] => somador:gen:3:uut.a
+bsum[0] => somador:gen:0:uut.b
+bsum[1] => somador:gen:1:uut.b
+bsum[2] => somador:gen:2:uut.b
+bsum[3] => somador:gen:3:uut.b
+cinsum => somador:gen:0:uut.cin
+ssum[0] <= somador:gen:0:uut.s
+ssum[1] <= somador:gen:1:uut.s
+ssum[2] <= somador:gen:2:uut.s
+ssum[3] <= somador:gen:3:uut.s
+coutsum <= somador:gen:3:uut.cout
+
+
+|calculadora|somador4bits:instanciaSomador|somador:\gen:0:uut
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|somador4bits:instanciaSomador|somador:\gen:1:uut
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|somador4bits:instanciaSomador|somador:\gen:2:uut
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|somador4bits:instanciaSomador|somador:\gen:3:uut
+a => s.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|subtrator4bits:instanciaSubtrator
+cinsb => subtrator:gen:0:uut.c_in
+asb[0] => subtrator:gen:0:uut.a
+asb[1] => subtrator:gen:1:uut.a
+asb[2] => subtrator:gen:2:uut.a
+asb[3] => subtrator:gen:3:uut.a
+bsb[0] => subtrator:gen:0:uut.b
+bsb[1] => subtrator:gen:1:uut.b
+bsb[2] => subtrator:gen:2:uut.b
+bsb[3] => subtrator:gen:3:uut.b
+coutsb <= subtrator:gen:3:uut.c_out
+ssb[0] <= subtrator:gen:0:uut.s
+ssb[1] <= subtrator:gen:1:uut.s
+ssb[2] <= subtrator:gen:2:uut.s
+ssb[3] <= subtrator:gen:3:uut.s
+
+
+|calculadora|subtrator4bits:instanciaSubtrator|subtrator:\gen:0:uut
+c_in => comb.IN0
+c_in => comb.IN0
+c_in => S.IN1
+A => comb.IN0
+A => comb.IN0
+A => comb.IN1
+B => comb.IN1
+B => comb.IN1
+B => comb.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|subtrator4bits:instanciaSubtrator|subtrator:\gen:1:uut
+c_in => comb.IN0
+c_in => comb.IN0
+c_in => S.IN1
+A => comb.IN0
+A => comb.IN0
+A => comb.IN1
+B => comb.IN1
+B => comb.IN1
+B => comb.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|subtrator4bits:instanciaSubtrator|subtrator:\gen:2:uut
+c_in => comb.IN0
+c_in => comb.IN0
+c_in => S.IN1
+A => comb.IN0
+A => comb.IN0
+A => comb.IN1
+B => comb.IN1
+B => comb.IN1
+B => comb.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|subtrator4bits:instanciaSubtrator|subtrator:\gen:3:uut
+c_in => comb.IN0
+c_in => comb.IN0
+c_in => S.IN1
+A => comb.IN0
+A => comb.IN0
+A => comb.IN1
+B => comb.IN1
+B => comb.IN1
+B => comb.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|inversor4bits:instanciaInversor
+ano[0] => inversor:gen:0:uut.ain
+ano[1] => inversor:gen:1:uut.ain
+ano[2] => inversor:gen:2:uut.ain
+ano[3] => inversor:gen:3:uut.ain
+anegado[0] <= inversor:gen:0:uut.ina
+anegado[1] <= inversor:gen:1:uut.ina
+anegado[2] <= inversor:gen:2:uut.ina
+anegado[3] <= inversor:gen:3:uut.ina
+
+
+|calculadora|inversor4bits:instanciaInversor|Inversor:\gen:0:uut
+ain => ina.DATAIN
+ina <= ain.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|inversor4bits:instanciaInversor|Inversor:\gen:1:uut
+ain => ina.DATAIN
+ina <= ain.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|inversor4bits:instanciaInversor|Inversor:\gen:2:uut
+ain => ina.DATAIN
+ina <= ain.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|inversor4bits:instanciaInversor|Inversor:\gen:3:uut
+ain => ina.DATAIN
+ina <= ain.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|maiorque:instanciaMaiorQue
+amore[0] => y.IN1
+amore[1] => y.IN1
+amore[2] => y.IN1
+amore[2] => y.IN0
+amore[3] => y.IN0
+amore[3] => y.IN0
+bmore[0] => y.IN1
+bmore[1] => y.IN1
+bmore[2] => y.IN1
+bmore[2] => y.IN1
+bmore[3] => y.IN1
+bmore[3] => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|menorque:instanciaMenorQue
+amiss[0] => ymiss.IN1
+amiss[1] => ymiss.IN0
+amiss[1] => ymiss.IN1
+amiss[2] => ymiss.IN0
+amiss[2] => ymiss.IN1
+amiss[3] => ymiss.IN0
+amiss[3] => ymiss.IN0
+bmiss[0] => ymiss.IN1
+bmiss[1] => ymiss.IN1
+bmiss[1] => ymiss.IN1
+bmiss[2] => ymiss.IN1
+bmiss[2] => ymiss.IN1
+bmiss[3] => ymiss.IN1
+bmiss[3] => ymiss.IN1
+ymiss <= ymiss.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|mux4_in4bits:multiplexador
+am[0] => mux4_in:gen:0:uut.a
+am[1] => mux4_in:gen:1:uut.a
+am[2] => mux4_in:gen:2:uut.a
+am[3] => mux4_in:gen:3:uut.a
+am[4] => mux4_in:gen:4:uut.a
+bm[0] => mux4_in:gen:0:uut.b
+bm[1] => mux4_in:gen:1:uut.b
+bm[2] => mux4_in:gen:2:uut.b
+bm[3] => mux4_in:gen:3:uut.b
+bm[4] => mux4_in:gen:4:uut.b
+cm[0] => mux4_in:gen:0:uut.c
+cm[1] => mux4_in:gen:1:uut.c
+cm[2] => mux4_in:gen:2:uut.c
+cm[3] => mux4_in:gen:3:uut.c
+cm[4] => mux4_in:gen:4:uut.c
+dm[0] => mux4_in:gen:0:uut.d
+dm[1] => mux4_in:gen:1:uut.d
+dm[2] => mux4_in:gen:2:uut.d
+dm[3] => mux4_in:gen:3:uut.d
+dm[4] => mux4_in:gen:4:uut.d
+em[0] => mux4_in:gen:0:uut.e
+em[1] => mux4_in:gen:1:uut.e
+em[2] => mux4_in:gen:2:uut.e
+em[3] => mux4_in:gen:3:uut.e
+em[4] => mux4_in:gen:4:uut.e
+ch[0] => mux4_in:gen:0:uut.s[0]
+ch[0] => mux4_in:gen:1:uut.s[0]
+ch[0] => mux4_in:gen:2:uut.s[0]
+ch[0] => mux4_in:gen:3:uut.s[0]
+ch[0] => mux4_in:gen:4:uut.s[0]
+ch[1] => mux4_in:gen:0:uut.s[1]
+ch[1] => mux4_in:gen:1:uut.s[1]
+ch[1] => mux4_in:gen:2:uut.s[1]
+ch[1] => mux4_in:gen:3:uut.s[1]
+ch[1] => mux4_in:gen:4:uut.s[1]
+ch[2] => mux4_in:gen:0:uut.s[2]
+ch[2] => mux4_in:gen:1:uut.s[2]
+ch[2] => mux4_in:gen:2:uut.s[2]
+ch[2] => mux4_in:gen:3:uut.s[2]
+ch[2] => mux4_in:gen:4:uut.s[2]
+saidam[0] <= mux4_in:gen:0:uut.saida
+saidam[1] <= mux4_in:gen:1:uut.saida
+saidam[2] <= mux4_in:gen:2:uut.saida
+saidam[3] <= mux4_in:gen:3:uut.saida
+saidam[4] <= mux4_in:gen:4:uut.saida
+
+
+|calculadora|mux4_in4bits:multiplexador|mux4_in:\gen:0:uut
+a => saida.IN0
+b => saida.IN0
+c => saida.IN0
+d => saida.IN0
+e => saida.IN0
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|mux4_in4bits:multiplexador|mux4_in:\gen:1:uut
+a => saida.IN0
+b => saida.IN0
+c => saida.IN0
+d => saida.IN0
+e => saida.IN0
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|mux4_in4bits:multiplexador|mux4_in:\gen:2:uut
+a => saida.IN0
+b => saida.IN0
+c => saida.IN0
+d => saida.IN0
+e => saida.IN0
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|mux4_in4bits:multiplexador|mux4_in:\gen:3:uut
+a => saida.IN0
+b => saida.IN0
+c => saida.IN0
+d => saida.IN0
+e => saida.IN0
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|mux4_in4bits:multiplexador|mux4_in:\gen:4:uut
+a => saida.IN0
+b => saida.IN0
+c => saida.IN0
+d => saida.IN0
+e => saida.IN0
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[0] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[1] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+s[2] => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|calculadora|display7seg:display7segmento
+xseg[0] => aseg.IN1
+xseg[0] => aseg.IN1
+xseg[0] => aseg.IN1
+xseg[0] => bseg.IN1
+xseg[0] => bseg.IN1
+xseg[0] => dseg.IN1
+xseg[0] => eseg.IN0
+xseg[0] => eseg.IN1
+xseg[0] => fseg.IN1
+xseg[0] => fseg.IN1
+xseg[0] => gseg.IN1
+xseg[0] => aseg.IN1
+xseg[0] => bseg.IN1
+xseg[0] => bseg.IN1
+xseg[0] => cseg.IN1
+xseg[0] => cseg.IN1
+xseg[0] => dseg.IN1
+xseg[1] => aseg.IN1
+xseg[1] => bseg.IN0
+xseg[1] => bseg.IN0
+xseg[1] => cseg.IN1
+xseg[1] => cseg.IN1
+xseg[1] => fseg.IN0
+xseg[1] => gseg.IN1
+xseg[1] => aseg.IN1
+xseg[1] => aseg.IN1
+xseg[1] => aseg.IN1
+xseg[1] => eseg.IN0
+xseg[2] => aseg.IN0
+xseg[2] => aseg.IN0
+xseg[2] => bseg.IN1
+xseg[2] => aseg.IN0
+xseg[2] => aseg.IN0
+xseg[2] => eseg.IN1
+xseg[3] => aseg.IN1
+xseg[3] => aseg.IN1
+xseg[3] => bseg.IN1
+xseg[3] => aseg.IN1
+xseg[3] => aseg.IN1
+xseg[3] => eseg.IN1
+xseg[3] => fseg.IN1
+aseg <= aseg.DB_MAX_OUTPUT_PORT_TYPE
+bseg <= bseg.DB_MAX_OUTPUT_PORT_TYPE
+cseg <= cseg.DB_MAX_OUTPUT_PORT_TYPE
+dseg <= dseg.DB_MAX_OUTPUT_PORT_TYPE
+eseg <= eseg.DB_MAX_OUTPUT_PORT_TYPE
+fseg <= fseg.DB_MAX_OUTPUT_PORT_TYPE
+gseg <= gseg.DB_MAX_OUTPUT_PORT_TYPE
 
 
