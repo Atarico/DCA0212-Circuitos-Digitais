@@ -1,6 +1,6 @@
 Assembler report for mux4_in4bits
-Mon Apr 08 18:07:36 2019
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Fri Apr 05 14:25:53 2019
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
 ---------------------
@@ -9,10 +9,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   1. Legal Notice
   2. Assembler Summary
   3. Assembler Settings
-  4. Assembler Generated Files
-  5. Assembler Device Options: C:/altera/13.0sp1/projetos/calculadora4bits/mux4_in4bits/output_files/mux4_in4bits.sof
-  6. Assembler Device Options: C:/altera/13.0sp1/projetos/calculadora4bits/mux4_in4bits/output_files/mux4_in4bits.pof
-  7. Assembler Messages
+  4. Assembler Messages
 
 
 
@@ -38,7 +35,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Apr 08 18:07:36 2019 ;
+; Assembler Status      ; Successful - Fri Apr 05 14:25:53 2019 ;
 ; Revision Name         ; mux4_in4bits                          ;
 ; Top-level Entity Name ; mux4_in4bits                          ;
 ; Family                ; Cyclone II                            ;
@@ -78,53 +75,19 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                              ;
-+----------------------------------------------------------------------------------------+
-; File Name                                                                              ;
-+----------------------------------------------------------------------------------------+
-; C:/altera/13.0sp1/projetos/calculadora4bits/mux4_in4bits/output_files/mux4_in4bits.sof ;
-; C:/altera/13.0sp1/projetos/calculadora4bits/mux4_in4bits/output_files/mux4_in4bits.pof ;
-+----------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/altera/13.0sp1/projetos/calculadora4bits/mux4_in4bits/output_files/mux4_in4bits.sof ;
-+----------------+-------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                         ;
-+----------------+-------------------------------------------------------------------------------------------------+
-; Device         ; EP2C35F672C7                                                                                    ;
-; JTAG usercode  ; 0x002FB069                                                                                      ;
-; Checksum       ; 0x002FB069                                                                                      ;
-+----------------+-------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/altera/13.0sp1/projetos/calculadora4bits/mux4_in4bits/output_files/mux4_in4bits.pof ;
-+--------------------+---------------------------------------------------------------------------------------------+
-; Option             ; Setting                                                                                     ;
-+--------------------+---------------------------------------------------------------------------------------------+
-; Device             ; EPCS16                                                                                      ;
-; JTAG usercode      ; 0x00000000                                                                                  ;
-; Checksum           ; 0x1C788372                                                                                  ;
-; Compression Ratio  ; 3                                                                                           ;
-+--------------------+---------------------------------------------------------------------------------------------+
-
-
 +--------------------+
 ; Assembler Messages ;
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Apr 08 18:07:34 2019
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+    Info: Processing started: Fri Apr 05 14:25:51 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off mux4_in4bits -c mux4_in4bits
-Info (115031): Writing out detailed assembly data for power analysis
-Info (115030): Assembler is generating device programming files
-Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4578 megabytes
-    Info: Processing ended: Mon Apr 08 18:07:36 2019
-    Info: Elapsed time: 00:00:02
+Warning (292011): Can't generate programming files because you are currently using the Quartus II software in Evaluation Mode
+Info: Quartus II 64-Bit Assembler was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 402 megabytes
+    Info: Processing ended: Fri Apr 05 14:25:54 2019
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

@@ -14,9 +14,9 @@
 
 -- VENDOR "Altera"
 -- PROGRAM "Quartus II 64-Bit"
--- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
+-- VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Full Version"
 
--- DATE "04/08/2019 16:54:52"
+-- DATE "04/06/2019 18:22:08"
 
 -- 
 -- Device: Altera EP2C35F672C7 Package FBGA672
@@ -28,18 +28,16 @@
 
 LIBRARY CYCLONEII;
 LIBRARY IEEE;
-LIBRARY STD;
 USE CYCLONEII.CYCLONEII_COMPONENTS.ALL;
 USE IEEE.STD_LOGIC_1164.ALL;
-USE STD.STANDARD.ALL;
 
 ENTITY 	subtrator4bits IS
     PORT (
 	cinsb : IN std_logic;
-	asb : IN STD.STANDARD.bit_vector(3 DOWNTO 0);
-	bsb : IN STD.STANDARD.bit_vector(3 DOWNTO 0);
-	coutsb : OUT STD.STANDARD.bit;
-	ssb : OUT STD.STANDARD.bit_vector(3 DOWNTO 0)
+	asb : IN std_logic_vector(3 DOWNTO 0);
+	bsb : IN std_logic_vector(3 DOWNTO 0);
+	coutsb : OUT std_logic;
+	ssb : OUT std_logic_vector(3 DOWNTO 0)
 	);
 END subtrator4bits;
 
@@ -92,10 +90,10 @@ SIGNAL \asb~combout\ : std_logic_vector(3 DOWNTO 0);
 BEGIN
 
 ww_cinsb <= cinsb;
-ww_asb <= IEEE.STD_LOGIC_1164.TO_STDLOGICVECTOR(asb);
-ww_bsb <= IEEE.STD_LOGIC_1164.TO_STDLOGICVECTOR(bsb);
-coutsb <= IEEE.STD_LOGIC_1164.TO_BIT(ww_coutsb);
-ssb <= IEEE.STD_LOGIC_1164.TO_BITVECTOR(ww_ssb);
+ww_asb <= asb;
+ww_bsb <= bsb;
+coutsb <= ww_coutsb;
+ssb <= ww_ssb;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;

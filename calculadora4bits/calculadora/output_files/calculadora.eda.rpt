@@ -1,5 +1,5 @@
 EDA Netlist Writer report for calculadora
-Mon Apr 08 23:01:14 2019
+Tue Apr 09 22:17:56 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,9 +36,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Apr 08 23:01:14 2019 ;
+; EDA Netlist Writer Status ; Successful - Tue Apr 09 22:17:56 2019 ;
 ; Revision Name             ; calculadora                           ;
-; Top-level Entity Name     ; calculadora                           ;
+; Top-level Entity Name     ; display7seg                           ;
 ; Family                    ; Cyclone II                            ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -65,13 +65,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                 ;
-+--------------------------------------------------------------------------------------------+
-; Generated Files                                                                            ;
-+--------------------------------------------------------------------------------------------+
-; C:/altera/13.0sp1/projetos/calculadora4bits/calculadora/simulation/modelsim/calculadora.vo ;
-+--------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                                   ;
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                                              ;
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; C:/UFRN/Matérias/Circuitos Digitais - Laboratorio/DCA0212-Circuitos-Digitais/calculadora4bits/calculadora/simulation/modelsim/calculadora.vo ;
++----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,12 +80,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Apr 08 23:01:14 2019
+    Info: Processing started: Tue Apr 09 22:17:55 2019
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog calculadora -c calculadora
-Info (204019): Generated file calculadora.vo in folder "C:/altera/13.0sp1/projetos/calculadora4bits/calculadora/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file calculadora.vo in folder "C:/UFRN/Matérias/Circuitos Digitais - Laboratorio/DCA0212-Circuitos-Digitais/calculadora4bits/calculadora/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4537 megabytes
-    Info: Processing ended: Mon Apr 08 23:01:15 2019
+    Info: Peak virtual memory: 4530 megabytes
+    Info: Processing ended: Tue Apr 09 22:17:56 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

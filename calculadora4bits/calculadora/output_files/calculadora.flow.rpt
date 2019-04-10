@@ -1,5 +1,5 @@
 Flow report for calculadora
-Mon Apr 08 23:01:14 2019
+Tue Apr 09 22:17:56 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Apr 08 23:01:14 2019           ;
+; Flow Status                        ; Successful - Tue Apr 09 22:17:56 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; calculadora                                     ;
-; Top-level Entity Name              ; calculadora                                     ;
+; Top-level Entity Name              ; display7seg                                     ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C7                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 27 / 33,216 ( < 1 % )                           ;
-;     Total combinational functions  ; 27 / 33,216 ( < 1 % )                           ;
+; Total logic elements               ; 7 / 33,216 ( < 1 % )                            ;
+;     Total combinational functions  ; 7 / 33,216 ( < 1 % )                            ;
 ;     Dedicated logic registers      ; 0 / 33,216 ( 0 % )                              ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 18 / 475 ( 4 % )                                ;
+; Total pins                         ; 11 / 475 ( 2 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/08/2019 23:00:17 ;
+; Start date & time ; 04/09/2019 22:12:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; calculadora         ;
 +-------------------+---------------------+
@@ -75,18 +75,19 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 963349207071.155477521601520          ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 963349207071.155485872412356          ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                    ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top            ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; display7seg ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; display7seg ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; display7seg ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; display7seg                           ; calculadora   ; --          ; --             ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
@@ -95,14 +96,14 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4665 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:06     ; 1.0                     ; 4897 MB             ; 00:00:05                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 4574 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4558 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4530 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4537 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4537 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:12     ; --                      ; --                  ; 00:00:12                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4662 MB             ; 00:00:02                           ;
+; Fitter                    ; 00:00:05     ; 1.0                     ; 4897 MB             ; 00:00:05                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4577 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4562 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4534 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4529 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4530 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:12     ; --                      ; --                  ; 00:00:13                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -129,7 +130,7 @@ quartus_fit --read_settings_files=off --write_settings_files=off calculadora -c 
 quartus_asm --read_settings_files=off --write_settings_files=off calculadora -c calculadora
 quartus_sta calculadora -c calculadora
 quartus_eda --read_settings_files=off --write_settings_files=off calculadora -c calculadora
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog calculadora -c calculadora --vector_source=C:/altera/13.0sp1/projetos/calculadora4bits/calculadora/testeSumSbInMqMqComMux.vwf --testbench_file=./simulation/qsim/calculadora.vt
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog calculadora -c calculadora --vector_source="C:/UFRN/Matérias/Circuitos Digitais - Laboratorio/DCA0212-Circuitos-Digitais/calculadora4bits/7segdecode/teste7segment.vwf" --testbench_file=./simulation/qsim/calculadora.vt
 quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog calculadora -c calculadora
 
 

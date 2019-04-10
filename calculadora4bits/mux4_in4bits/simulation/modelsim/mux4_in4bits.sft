@@ -1,1 +1,5 @@
-set tool_name "ModelSim-Altera (Verilog)"
+set tool_name "ModelSim-Altera (VHDL)"
+set corner_file_list {
+	{{"Slow Model"} {mux4_in4bits.vho mux4_in4bits_vhd.sdo}}
+	{{"Fast Model"} {mux4_in4bits_fast.vho mux4_in4bits_vhd_fast.sdo}}
+}

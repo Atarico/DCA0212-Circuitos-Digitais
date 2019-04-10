@@ -10,7 +10,7 @@ end somador4bits;
 architecture comportamento of somador4bits is
 component somador is 
 port(a, b, cin : in bit;
-	s, cout : out bit);
+s, cout : out bit);
 end component;
 signal c: bit_vector(4 downto 0);
 begin

@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon Apr 08 18:07:25 2019
-Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Analysis & Synthesis Status : Successful - Fri Apr 05 14:25:27 2019
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
 Revision Name : mux4_in4bits
 Top-level Entity Name : mux4_in4bits
 Family : Cyclone II
-Total logic elements : 13
-    Total combinational functions : 13
+Total logic elements : 16
+    Total combinational functions : 16
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 27
+Total pins : 33
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

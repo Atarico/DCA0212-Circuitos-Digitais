@@ -1,0 +1,5 @@
+|inversor
+ain => ina.DATAIN
+ina <= ain.DB_MAX_OUTPUT_PORT_TYPE
+
+
