@@ -1,0 +1,35 @@
+
+Inputs:
+
+Nome sinal = Numero Pino = Nossa variável
+
+SW[17] = PIN_V2 = btnLigar
+SW[16] = PIN_V1 = chave[2]
+SW[15] = PIN_U4 = chave[1]
+SW[14] = PIN_U3 = chave[0]
+
+SW[13] = PIN_T7 = x1[3]
+SW[12] = PIN_P2 = x1[2]
+SW[11] = PIN_P1 = x1[1]
+SW[10] = PIN_N1 = x1[0]
+
+SW[9] = PIN_A13 = x2[3]
+SW[8] = PIN_B13 = x2[2]
+SW[7] = PIN_C13 = x2[1]
+SW[6] = PIN_AC13 = x2[0]
+
+
+Outputs:
+
+Nome sinal = Numero Pino = Nossa variável
+
+LEDG[7] = PIN_Y18 = c0
+
+HEX0[0] = PIN_AF10 = saidaDisplay[0]
+HEX0[1] = PIN_AB12 = saidaDisplay[1]
+HEX0[2] = PIN_AC12 = saidaDisplay[2]
+HEX0[3] = PIN_AD11 = saidaDisplay[3]
+HEX0[4] = PIN_AE11 = saidaDisplay[4]
+HEX0[5] = PIN_V14 = saidaDisplay[5]
+HEX0[6] = PIN_V13 = saidaDisplay[6]
+
