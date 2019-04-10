@@ -6,7 +6,7 @@ port(
 	btnLigar: in BIT;
 	
 	saidaDisplay: out bit_VECTOR (6 downto 0);
-	ctrl: out bit_VECTOR(1 downto 0);
+	--ctrl: out bit_VECTOR(1 downto 0);
 	c0: out bit);
 
 end calculadora;
@@ -84,6 +84,7 @@ end component;
 
 component display7seg is 
 port (xseg: in bit_VECTOR (3 downto 0);
+		ctrl0: in bit;
 		aseg,bseg,cseg,dseg,eseg,fseg,gseg : out bit);
 end component;
 
@@ -106,7 +107,10 @@ signal coutMaiorQue: bit;
 --sinais do maior que
 signal coutMenorQue: bit;
 
+--sinais do display 7 segmentos
 signal Yseg: bit_vector(3 downto 0);
+signal ctrlZero: bit;
+
 begin
 	--somador
 	instanciaSomador: somador4bits port map (	asum(0)=>x1(0), asum(1)=>x1(1), asum(2)=>x1(2), asum(3)=>x1(3),
@@ -143,7 +147,7 @@ begin
 	--011 menorque
 	--100 inversor
 
-	multiplexador: mux4_in4bits port map(	am(0) => Ysb(0), am(1) => Ysb(1), am(2) => Ysb(2), am(3) => Ysb(3), am(4) => Ysb(4),
+	multiplexador: mux4_in4bits port map(	am(0) => not coutMenorQue and Ysb(0), am(1) => not coutMenorQue and Ysb(1), am(2) => not coutMenorQue and Ysb(2), am(3) => not coutMenorQue and Ysb(3), am(4) => Ysb(4),
 														bm(0) => Ysum(0), bm(1) => Ysum(1), bm(2) => Ysum(2), bm(3) => Ysum(3), bm(4) => Ysum(4),
 														cm(0) => '0', cm(1) => '0', cm(2) => '0', cm(3) => '0', cm(4) => coutMaiorQue,
 														dm(0) => '0', dm(1) => '0', dm(2) => '0', dm(3) => '0', dm(4) => coutMenorQue,
@@ -154,11 +158,12 @@ begin
 	
 	--atribuindo a saida por questoes de debugging
 	
-	ctrl(0) <= NOT(btnLigar) OR (NOT(chave(2)) and chave(1) and NOT(chave(0))) OR (NOT(chave(2)) and chave(1) and chave(0));
-	ctrl(1) <= '0';
+	ctrlZero <= NOT(btnLigar) OR (NOT(chave(2)) and NOT(chave(1)) and NOT(chave(0)) and Ysb(4)) OR (NOT(chave(2)) and chave(1) and NOT(chave(0))) OR (NOT(chave(2)) and chave(1) and chave(0));
+	--ctrl(1) <= '0';
 	
-	display7segmento: display7seg port map( xseg(0) => Yseg(0), xseg(1) => Yseg(1),xseg(2) => Yseg(2),xseg(3) => Yseg(3),
-														aseg => saidaDisplay(0), bseg => saidaDisplay(1), cseg => saidaDisplay(2), dseg => saidaDisplay(3), eseg => saidaDisplay(4), fseg => saidaDisplay(5), gseg => saidaDisplay(6));
+	display7segmento: display7seg port map( 	xseg(0) => Yseg(0), xseg(1) => Yseg(1),xseg(2) => Yseg(2),xseg(3) => Yseg(3), 
+															ctrl0 => ctrlZero,
+															aseg => saidaDisplay(0), bseg => saidaDisplay(1), cseg => saidaDisplay(2), dseg => saidaDisplay(3), eseg => saidaDisplay(4), fseg => saidaDisplay(5), gseg => saidaDisplay(6));
 	
 
 --         						 COMBINACAO LOGICA DO SUBTRATOR PARA ACENDER O LED			   ||			COMBINACAO LOGICA DO SOMADOR PARA ACENDER O LED		  || 			COMBINACAO LOGICA DO MAIOR QUE PARA ACENDER O LED		   ||				COMBINACAO LOGICA DO MENOR QUE PARA ACENDER O LED
